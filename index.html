@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADLLBOT - شات بوت عدل 3</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <h1>ADLLBOT - مساعد سكن عدل 3</h1>
+        
+        <div class="chat-box" id="chat-box">
+            <div class="bot-message">
+                <img src="/static/bot.png" class="bot-img">
+                <span>مرحبًا! أنا ADLLBOT  كيف يمكنني مساعدتك؟ 😊</span>
+            </div>
+        </div>
+        
+        <input type="text" id="user-input" placeholder="اكتب سؤالك هنا..." onkeypress="handleKeyPress(event)">
+        <button onclick="sendMessage()">إرسال</button>
+        <button onclick="clearChat()" class="clear-btn">مسح المحادثة</button>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
