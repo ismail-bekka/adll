@@ -4,7 +4,7 @@ import re
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder="templates", static_folder="static")
 
 # تحميل معلومات عدل 3 من ملف JSON
 with open("adll3_data.json", "r", encoding="utf-8") as f:
